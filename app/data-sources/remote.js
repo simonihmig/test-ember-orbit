@@ -1,7 +1,7 @@
 import Object from '@ember/object';
 import JSONAPISource, {JSONAPISerializer} from '@orbit/jsonapi';
 import Orbit from '@orbit/data';
-import Config from 'test-ember-orbit/config/environment';
+import fetch from 'fetch';
 
 class MySerializer extends JSONAPISerializer {
   resourceKey (/*type*/) {
@@ -20,9 +20,8 @@ class MyJSONAPISource extends JSONAPISource {
 
 export default Object.create({
 	create (injections = {}) {
-    Orbit.fetch = window.fetch.bind(window);
+    Orbit.fetch = fetch.bind(fetch);
 		injections.SerializerClass = MySerializer;
-    injections.namespace = 'api';
 		injections.name = 'remote';
 
 		return new MyJSONAPISource(injections);

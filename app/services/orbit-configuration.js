@@ -4,7 +4,6 @@ import Orbit from '@orbit/data';
 import Service, {inject} from '@ember/service';
 import {get} from '@ember/object';
 import {getOwner} from '@ember/application';
-import Config from 'test-ember-orbit/config/environment';
 
 export default Service.extend({
 	// Inject all of the ember-orbit services
