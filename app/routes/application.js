@@ -6,6 +6,10 @@ export default Ember.Route.extend({
 
   beforeModel () {
     return this.get('orbitConfiguration').configure();
+  },
+
+  model() {
+    return this.store.liveQuery(q => q.findRecords('patient'));
   }
 
 });

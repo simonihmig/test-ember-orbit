@@ -1,5 +1,6 @@
 <button {{action "createPatient"}}>CREATE PATIENT</button>
-{{#each records as |record|}}
+{{#each patients as |record|}}
+  {{log record.remoteId}}
 <ul>
   <li>id: {{record.id}}</li>
   <li>name: {{record.name}}</li>

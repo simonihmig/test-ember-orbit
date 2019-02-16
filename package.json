@@ -17,7 +17,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
-    "ember-cli": "~2.18.0",
+    "ember-cli": "ember-cli/ember-cli",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
     "ember-cli-dependency-checker": "^2.0.0",
@@ -33,9 +33,9 @@
     "ember-export-application-global": "^2.0.0",
     "ember-fetch": "^3.4.4",
     "ember-load-initializers": "^1.0.0",
-    "ember-orbit": "^0.15.4",
+    "ember-orbit": "^0.15.10",
     "ember-resolver": "^4.0.0",
-    "ember-source": "~2.18.0",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/7df81ec411b2da73086f63bf6a26b113dfa5a1a2.tgz",
     "loader.js": "^4.2.3"
   },
   "engines": {
@@ -43,8 +43,8 @@
   },
   "private": true,
   "dependencies": {
-    "@orbit/indexeddb-bucket": "^0.15.0",
-    "@orbit/jsonapi": "^0.15.0",
-    "@orbit/local-storage-bucket": "^0.15.0"
+    "@orbit/indexeddb-bucket": "^0.15.23",
+    "@orbit/jsonapi": "0.15.25",
+    "@orbit/local-storage-bucket": "^0.15.23"
   }
 }

@@ -1,4 +1,4 @@
-import {Model, attr, key} from 'ember-orbit';
+import {Model, attr, key } from 'ember-orbit';
 
 export default Model.extend({
 	remoteId: key(),
